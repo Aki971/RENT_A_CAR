@@ -1,0 +1,112 @@
+users:
+  path: /users
+  controller: App\Controller\UserController::getAll
+  methods: GET
+user:
+  path: users/{guid}
+  controller: App\Controller\UserController::get
+  methods: GET
+  requirements:
+    guid: '^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$'
+user_create:
+  path: /users
+  controller: App\Controller\UserController::create
+  methods: POST
+user_update:
+  path: /users/{guid}
+  controller: App\Controller\UserController::update
+  methods: PUT
+  requirements:
+    guid: '^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$'
+user_delete:
+  path: /users/{guid}
+  controller: App\Controller\UserController::delete
+  methods: DELETE
+  requirements:
+    guid: '^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$'
+user_getByEmail:
+  path: /users/get-by-email
+  controller: App\Controller\UserController::getByEmail
+  methods: POST
+user_login:
+  path: /users/login
+  controller: App\Controller\UserController::login
+  methods: POST
+pages:
+  path: /pages
+  controller: App\Controller\PageController::getAll
+  methods: GET
+page:
+  path: pages/{guid}
+  controller: App\Controller\PageController::get
+  methods: GET
+  requirements:
+    guid: '^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$'
+page_create:
+  path: /pages
+  controller: App\Controller\PageController::create
+  methods: POST
+page_update:
+  path: /pages/{guid}
+  controller: App\Controller\PageController::update
+  methods: PUT
+  requirements:
+    guid: '^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$'
+page_delete:
+  path: /pages/{guid}
+  controller: App\Controller\PageController::delete
+  methods: DELETE
+  requirements:
+    guid: '^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$'
+vehicles:
+  path: /vehicles
+  controller: App\Controller\VehicleController::getAll
+  methods: GET
+vehicle:
+  path: vehicles/{guid}
+  controller: App\Controller\VehicleController::get
+  methods: GET
+  requirements:
+    guid: '^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$'
+vehicle_create:
+  path: /vehicles
+  controller: App\Controller\VehicleController::create
+  methods: POST
+vehicle_update:
+  path: /vehicles/{guid}
+  controller: App\Controller\VehicleController::update
+  methods: PUT
+  requirements:
+    guid: '^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$'
+vehicle_delete:
+  path: /vehicles/{guid}
+  controller: App\Controller\VehicleController::delete
+  methods: DELETE
+  requirements:
+    guid: '^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$'
+bookinghistorys:
+  path: /bookinghistorys
+  controller: App\Controller\BookingHistoryController::getAll
+  methods: GET
+bookinghistory:
+  path: bookinghistorys/{guid}
+  controller: App\Controller\BookingHistoryController::get
+  methods: GET
+  requirements:
+    guid: '^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$'
+bookinghistory_create:
+  path: /bookinghistorys
+  controller: App\Controller\BookingHistoryController::create
+  methods: POST
+bookinghistory_update:
+  path: /bookinghistorys/{guid}
+  controller: App\Controller\BookingHistoryController::update
+  methods: PUT
+  requirements:
+    guid: '^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$'
+bookinghistory_delete:
+  path: /bookinghistorys/{guid}
+  controller: App\Controller\BookingHistoryController::delete
+  methods: DELETE
+  requirements:
+    guid: '^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$'
